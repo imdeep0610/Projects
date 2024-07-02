@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Password Generator</h1>
+        <div class="display-container">
+        <input type="pass" readonly placeholder="Password" class="readPass">
+            <button class="cpyBtn"></button>
+            <div class="cpyMsg"></div>
+        </div>
+        <div class="content">
+            <div class="length-container">
+           <p class="text">Password Length</p>
+           <span class="passLength"></span>
+        </div>
+        <div class="slider-container">
+            <input type="range" min="1" max="20" id="slider">
+        </div>
+      
+            <div class="check">
+            <input type="checkbox" id="check1">
+            <label for="check1">Includes uppercase letter</label>
+            </div>
+            <div class="check">
+            <input type="checkbox" id="check2">
+            <label for="check2">Includes lowercase letter</label>
+           </div>
+          <div class="check">
+          <input type="checkbox" id="check3">
+          <label for="check3">Includes numbers</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="check4">
+            <label for="check4">Includes symbol</label>
+            </div>
+           <div class="password-strength">
+            <p class="strength">Strength</p>
+            <div class="strength-icon"></div>
+           </div>
+          <button class="pass-btn"></button>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
